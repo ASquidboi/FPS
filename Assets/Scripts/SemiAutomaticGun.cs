@@ -13,7 +13,7 @@ public class SemiAutomaticGun : MonoBehaviour
     public GameObject impactEffect;
     public float impactForce = 30f;
     //Weapon timing
-    private float nextTimeToFire = 0f;
+    public float nextTimeToFire = 0f;
     //Animation stuff
     public Animator animator;
     public AudioSource firingSound;
@@ -54,6 +54,11 @@ public class SemiAutomaticGun : MonoBehaviour
                 if(target != null) 
                 {
                     target.TakeDamage(damage);
+                }
+                fracture glass = hit.transform.GetComponent<fracture>();
+                if(glass != null) 
+                {
+                    glass.Shatter();
                 }
                 if(hit.rigidbody != null)
                 {

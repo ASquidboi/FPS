@@ -13,8 +13,11 @@ public class HookShot : MonoBehaviour
    public Rigidbody rb;
    public float speed = 10f;
    public float minDist = 10f;
-   private float nextTimeToFire = 0f;
-   public float fireRate = 8f;
+   public static float nextTimeToFire = 0f;
+   public float fireRate = 0.1f;
+   public static float time1 = 0f;
+   public GameObject readyEffect;
+   public float effectDuration = 10f;
 
    void Awake() {
         lr = GetComponent<LineRenderer>();
@@ -22,15 +25,32 @@ public class HookShot : MonoBehaviour
 
    void Update() {
 
+     
         DrawRope();
 
         if (Input.GetMouseButtonDown(1) && Time.time >= nextTimeToFire) {
             nextTimeToFire = Time.time + 1f/fireRate;
             StartHook();
+            readyEffect.SetActive(false);
+            StartCoroutine(ShowAndHideEffect());
+            
         }
         else if (Input.GetMouseButtonUp(1)) {
             StopHook();
         }
+   }
+   private IEnumerator ShowAndHideEffect()
+    {
+        
+
+        yield return new WaitForSeconds(effectDuration); // Wait for the specified duration
+        readyEffect.SetActive(true); // Show the effect
+        // Hide the effect gradually using a gradient or animation if desired
+        // For now, let's just deactivate it
+     //    readyEffect.SetActive(false);
+    }
+   void FixedUpdate(){
+     
    }
 
    void LateUpdate() {

@@ -19,6 +19,7 @@ public class AutomaticGun : MonoBehaviour
     public AudioSource firingSound;
     public float ammo = 25f;
     public float magsize = 25f;
+    public fracture breakScript;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +50,11 @@ public class AutomaticGun : MonoBehaviour
                 if(target != null) 
                 {
                     target.TakeDamage(damage);
+                }
+                fracture glass = hit.transform.GetComponent<fracture>();
+                if(glass != null) 
+                {
+                    glass.Shatter();
                 }
                 Button button = hit.transform.GetComponent<Button>();
                 if(hit.rigidbody != null)

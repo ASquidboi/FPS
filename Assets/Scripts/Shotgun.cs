@@ -71,6 +71,11 @@ public class Shotgun : MonoBehaviour
             {
                 target.TakeDamage(damage);
             }
+            fracture glass = hit.transform.GetComponent<fracture>();
+                if(glass != null) 
+                {
+                    glass.Shatter();
+                }
             if(hit.rigidbody != null)
             {
                 hit.rigidbody.AddForce(-hit.normal * impactForce);
