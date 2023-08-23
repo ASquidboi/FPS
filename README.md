@@ -11,5 +11,9 @@ Brackeys & Dani, for coding tutorials.
 
 My playtesters (both of them)
 
+ERBH, for the music i ~~stole~~ **borrowed** and did not steal
+
+ChatGPT for sometimes fixing my code and sometimes giving me the worst lines of code i've ever
+
 
 
