@@ -1,9 +1,13 @@
 # FPS
 Unnamed FPS i made lol
 --------------------
-An FPS, heavily inspired by Karlson. Still in development.
+An FPS, heavily inspired by Karlson. Still in development. Beta 1.3
 
 This game is in **beta**. If you find any bugs, ~~deal with it~~<sup>/j please dont take this seriously</sup> please let me know via the repo :)
+
+
+
+also we don't talk about the tutorial level
 
 Credits:
 
@@ -15,5 +19,11 @@ ERBH, for the music i ~~stole~~ **borrowed** and did not steal
 
 ChatGPT for sometimes fixing my code and sometimes giving me the worst lines of code i've ever
 
-
+To-do list
+-[ ]Finish level 3
+-[x]add sniper
+-[ ]Fix sniper model for lvl 4
+-[ ]Sniper mechanics for lvl 4
+-[ ]learn good level design
+-[ ]get a life
 
