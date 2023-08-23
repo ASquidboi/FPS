@@ -23,13 +23,13 @@ To-do list
 
 -[ ]Finish level 3
 
--[x]add sniper
+- [x]add sniper
 
--[ ]Fix sniper model for lvl 4
+- [ ]Fix sniper model for lvl 4
 
--[ ]Sniper mechanics for lvl 4
+- [ ]Sniper mechanics for lvl 4
 
--[ ]learn good level design
+- [ ]learn good level design
 
--[ ]get a life
+- [ ]get a life
 
