@@ -21,7 +21,7 @@ ChatGPT for sometimes fixing my code and sometimes giving me the worst lines of 
 
 To-do list
 
--[ ]Finish level 3
+- [ ]Finish level 3
 
 - [x]add sniper
 
