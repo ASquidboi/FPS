@@ -20,10 +20,16 @@ ERBH, for the music i ~~stole~~ **borrowed** and did not steal
 ChatGPT for sometimes fixing my code and sometimes giving me the worst lines of code i've ever
 
 To-do list
+
 -[ ]Finish level 3
+
 -[x]add sniper
+
 -[ ]Fix sniper model for lvl 4
+
 -[ ]Sniper mechanics for lvl 4
+
 -[ ]learn good level design
+
 -[ ]get a life
 
