@@ -1,4 +1,15 @@
 # FPS
 Unnamed FPS i made lol
 --------------------
-An FPS, heavily inspired by Karlson. Currently in beta 1.2, i am working on the game as often as possible. Thank you very much to DaniDev and Brackeys, for a lot of help with scripting (not directly, through tutorials). Enjoy
+An FPS, heavily inspired by Karlson. Still in development.
+
+This game is in **beta**. If you find any bugs, ~~deal with it~~<sup>/j please dont take this seriously</sup> please let me know via the repo :)
+
+Credits:
+
+Brackeys & Dani, for coding tutorials.
+
+My playtesters (both of them)
+
+
+
