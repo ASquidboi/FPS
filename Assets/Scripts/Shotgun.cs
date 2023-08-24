@@ -35,13 +35,14 @@ public class Shotgun : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetButtonDown("Fire1") && ammo > 0)
+        if (Input.GetButtonDown("Fire1") && ammo > 0 && Time.time >= nextTimeToFire)
         {
             ammo -= 1f;
             for(int i = 0; i < Pellets; i++)
             {
                 Shoot();
             }
+            nextTimeToFire = Time.time + 1f/fireRate;
         }  
         if (Input.GetButtonDown("Reload"))
         {

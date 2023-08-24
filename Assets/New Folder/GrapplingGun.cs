@@ -56,6 +56,9 @@ public class GrapplingGun : MonoBehaviour
         lr.positionCount = 0;
         Destroy(joint);
    }
+   void OnDisable() {
+     StopGrapple();
+   }
 
    void DrawRope() {
 
