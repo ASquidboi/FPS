@@ -25,9 +25,9 @@ To-do list
 
 -[x] add sniper
 
--[ ] Fix sniper model for lvl 4
+-[x] Fix sniper model for lvl 4
 
--[ ] Sniper mechanics for lvl 4
+-[ ] Sniper mechanics for lvl 4 (in progress)
 
 -[ ] learn good level design
 
