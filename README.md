@@ -11,7 +11,7 @@ also we don't talk about the tutorial level
 
 Credits:
 
-Brackeys & Dani, for coding tutorials.
+@Brackeys & @DaniDevy, for coding tutorials.
 
 My playtesters (both of them)
 
