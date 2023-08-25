@@ -1,13 +1,12 @@
 # FPS
 Unnamed FPS i made lol
 --------------------
-A basic FPS i'm working on, heavily inspired by Karlson (Made by Danidev). Will be eventually published, likely on itch.io. 
-I try to publish changes but often forget-
-Special thanks to:
-Inspiration/Tutorials
-Brackeys
-DaniDev
-Playtesters:
-(Anonymous playtester)
-(will expand later)
-pls help 
+An FPS, heavily inspired by Karlson. Still in development. Current version: Beta 1.3
+
+This game is in **beta**. If you find any bugs, ~~deal with it~~<sup>/j please dont take this seriously</sup> please let me know via the repo :)
+
+Thanks to @Brackeys and @DaniDev for a few coding tutorials,
+
+My playtesters (anonymous)
+
+SOMEONE PLEASE REMIND ME TO COMMIT MORE OFTEN
