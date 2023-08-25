@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+
 
 public class AutomaticGun : MonoBehaviour
 {
@@ -20,6 +22,7 @@ public class AutomaticGun : MonoBehaviour
     public float ammo = 25f;
     public float magsize = 25f;
     public fracture breakScript;
+    public float ReloadTime = 3f;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,7 +39,7 @@ public class AutomaticGun : MonoBehaviour
         }
         if(Input.GetButtonDown("Reload"))
         {
-            Reload();
+            StartCoroutine(Reload());
         }
         void Shoot() 
         {
@@ -67,10 +70,13 @@ public class AutomaticGun : MonoBehaviour
             }
             firingSound.Play();
         }
-        void Reload()
+
+        IEnumerator Reload()
         {
             animator.SetTrigger("Reload");
+            yield return new WaitForSeconds(ReloadTime);
             ammo = magsize;
         }
+        
     }
 }

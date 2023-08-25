@@ -25,8 +25,8 @@ public class Slowmo : MonoBehaviour
     }
     
     void SlowMotion()
-    {
-        Time.timeScale = slowmospeed;
+    {Time.timeScale = slowmospeed;
+        
     }
     void StopSlowmo()
     {

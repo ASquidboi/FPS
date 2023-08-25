@@ -24,6 +24,12 @@ public class SniperRifle : MonoBehaviour
     public float magsize = 12f;
 
     private bool isScoped = false;
+    public GameObject scopeOverlay;
+    public GameObject weaponCamera;
+    public float slowmo = 0.5f;
+    public float FOV = 15f;
+    public float normalFOV = 60f;
+    public float ReloadTime = 5f;
     //Ammo
 
     //public float ammo = 25f;
@@ -75,16 +81,42 @@ public class SniperRifle : MonoBehaviour
             }
             firingSound.Play();
         }
+        
 
         if (Input.GetButtonDown("Fire2"))
         {
             isScoped = !isScoped;
             animator2.SetBool("Scoped", isScoped);
+            if (isScoped){
+                StartCoroutine(OnScoped());
+            } else {
+                OnUnscoped();
+            }
+        }
+
+        IEnumerator OnScoped()
+        {
+            yield return new WaitForSeconds(0.15f);
+
+            scopeOverlay.SetActive(true);
+            weaponCamera.SetActive(false );
+            Time.timeScale = slowmo;
+            normalFOV = fpsCam.fieldOfView;
+            fpsCam.fieldOfView = FOV;
+        }
+
+        void OnUnscoped()
+        {
+            scopeOverlay.SetActive(false);
+            weaponCamera.SetActive(true);
+            Time.timeScale = 1f;
+            fpsCam.fieldOfView = normalFOV;
         }
     }
-    void Reload()
-        {
-            animator.SetTrigger("Reload");
-            ammo = magsize;
-        }
+    IEnumerator Reload()
+    {
+        animator.SetTrigger("Reload");
+        yield return new WaitForSeconds(ReloadTime);
+        ammo = magsize;
+    }
 }
